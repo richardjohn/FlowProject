@@ -8,6 +8,7 @@
  *
  * @author hashinpanakkaparambil
  */
-interface Domain
-{
+interface LogicException {
+    //put your code here
 }
+?>
