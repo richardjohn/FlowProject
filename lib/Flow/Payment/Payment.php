@@ -8,6 +8,7 @@
  *
  * @author hashinpanakkaparambil
  */
-interface Service {
+interface Payment {
     //put your code here
 }
+?>

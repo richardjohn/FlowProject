@@ -8,6 +8,7 @@
  *
  * @author hashinpanakkaparambil
  */
-interface Service {
+interface Auth {
     //put your code here
 }
+?>

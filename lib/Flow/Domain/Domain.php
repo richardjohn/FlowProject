@@ -8,6 +8,6 @@
  *
  * @author hashinpanakkaparambil
  */
-interface Service {
+interface Domain {
     //put your code here
 }

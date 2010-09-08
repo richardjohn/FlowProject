@@ -3,11 +3,6 @@
 namespace Flow\Dao;
 use Flow\Entity\Entity;
 
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
-*/
-
 /**
  * Description of SimpleDao
  *

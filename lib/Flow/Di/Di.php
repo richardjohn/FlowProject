@@ -8,6 +8,7 @@
  *
  * @author hashinpanakkaparambil
  */
-interface Service {
+interface Di {
     //put your code here
 }
+?>

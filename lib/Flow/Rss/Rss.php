@@ -8,6 +8,7 @@
  *
  * @author hashinpanakkaparambil
  */
-interface Service {
+interface Rss {
     //put your code here
 }
+?>

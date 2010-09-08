@@ -8,6 +8,7 @@
  *
  * @author hashinpanakkaparambil
  */
-interface Service {
+interface Batch {
     //put your code here
 }
+?>
