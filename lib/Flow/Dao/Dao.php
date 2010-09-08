@@ -2,6 +2,8 @@
 
 namespace Flow\Dao;
 
+use Flow\Entity\Entity;
+
 /* 
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -13,11 +15,11 @@ namespace Flow\Dao;
  */
 interface Dao
 {
-    public function save();
+    public function save(Entity $entity);
 
-    public function get();
+    public function getById($id);
 
-    public function update();
+    public function update(Entity $entity);
 
-    public function delete();
+    public function delete(Entity $entity);
 }

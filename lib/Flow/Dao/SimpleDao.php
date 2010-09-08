@@ -1,9 +1,11 @@
 <?php
+
 namespace Flow\Dao;
+
 /* 
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
- */
+*/
 
 /**
  * Description of SimpleDao
@@ -12,21 +14,19 @@ namespace Flow\Dao;
  */
 class SimpleDao implements Dao
 {
-    protected $_entity;
-    
-    public function delete()
+    public function delete(Entity $entity)
     {
     }
 
-    public function get()
+    public function getById($id)
     {
     }
 
-    public function save()
+    public function save(Entity $entity)
     {
     }
     
-    public function update()
+    public function update(Entity $entity)
     {
     }
 }
