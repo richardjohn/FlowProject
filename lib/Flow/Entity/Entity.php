@@ -12,5 +12,5 @@ namespace Flow\Entity;
  */
 interface Entity
 {
-    
+    //public 
 }

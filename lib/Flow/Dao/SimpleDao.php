@@ -1,6 +1,7 @@
 <?php
 
 namespace Flow\Dao;
+use Flow\Entity\Entity;
 
 /* 
  * To change this template, choose Tools | Templates

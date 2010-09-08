@@ -1,17 +1,17 @@
 <?php
 
-namespace Flow\Logic;
-
+namespace Flow\Entity;
 /* 
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 
 /**
+ * Description of SimpleEntity
  *
  * @author hashinpanakkaparambil
  */
-interface Logic
+class SimpleEntity implements Entity
 {
     
 }

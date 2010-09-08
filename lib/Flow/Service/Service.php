@@ -1,7 +1,4 @@
 <?php
-
-namespace Flow\Logic;
-
 /* 
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -11,7 +8,7 @@ namespace Flow\Logic;
  *
  * @author hashinpanakkaparambil
  */
-interface Logic
-{
-    
+interface Service {
+    //put your code here
 }
+?>

@@ -1,15 +1,11 @@
 <?php
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- * @author hashinpanakkaparambil
- */
+$paths = array(realpath('../lib/'), get_include_path());
+set_include_path(implode(PATH_SEPARATOR, $paths));
 
-// TODO: check include path
-//ini_set('include_path', ini_get('include_path'));
+require_once ('Flow/Autoloader/NsAutoloader.php');
 
-// put your code here
+$autoloader = new Flow\Autoloader\NsAutoloader();
+$autoloader->register();
+
 ?>
