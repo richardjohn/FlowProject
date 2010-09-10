@@ -10,6 +10,7 @@ namespace Flow\Annotation;
  *
  * @author hashinpanakkaparambil
  */
-interface Reader {
+interface Reader
+{
     //put your code here
 }
