@@ -19,6 +19,9 @@ class NsAutoloader implements Autoloader
     public function autoload($class)
     {
         $class = str_replace('\\', \DIRECTORY_SEPARATOR, $class);
+        if (strpos($class, \DIRECTORY_SEPARATOR) === 0) {
+            $class = substr($class, 1);
+        }
         require_once ($class . '.php');
     }
 

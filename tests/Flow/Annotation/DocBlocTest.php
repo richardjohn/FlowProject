@@ -1,5 +1,5 @@
 <?php
-namespace Flow\Tests;
+namespace Flow\Tests\Annotation;
 use Flow\Annotation\DocBloc;
 /* 
  * To change this template, choose Tools | Templates
@@ -19,7 +19,7 @@ class DocBlocTest extends \PHPUnit_Framework_TestCase
     {
         $comment = "
         /**
-         * @TestAnnotation
+         *   * @Entity ( table=customer , engine=innodb , more=more)
          * @AnotherAnnotation
          */";
         $this->_docBloc = new DocBloc($comment);

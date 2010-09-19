@@ -1,8 +1,7 @@
 <?php
 
 namespace Flow\Annotation;
-use Flow\Annotation\Parseable;
-use Flow\Annotation\Annotated;
+use Flow\Annotation\Annotator;
 use Flow\Annotation\Annotation;
 /* 
  * To change this template, choose Tools | Templates
@@ -14,7 +13,7 @@ use Flow\Annotation\Annotation;
  *
  * @author hashinpanakkaparambil
  */
-class DocBloc implements Annotated
+class DocBloc implements Annotator
 {
     protected $_comment;
 
@@ -32,12 +31,22 @@ class DocBloc implements Annotated
         $this->_lines = explode("\n", $this->_comment);
         foreach ($this->_lines as $line) {
             $matches = array();
-            $matched = preg_match('/@([a-zA-Z\(\)]+)$/', $line, $matches);
+
+            $matched = preg_match(
+                '/[\*\s]*@(\w+)\s*(\((\s*(\w+\s*=\s*\w+\s*,?\s*)*\s*)\))?\s*$/',
+                $line, $matches
+            );
+            
             if ($matched > 0) {
-                var_dump($matches[1]);echo "\n";
-                $this->_annotations[] = new Annotation($matches[1]);
+                $annotation = new Annotation();
+                $annotation->setName($matches[1]);
+                $annotation->setValuesFromString($matches[2]);
+                $this->_annotations[] = $annotation;
             }
+            
         }
 
+        return $this->_annotations;
     }
+
 }
